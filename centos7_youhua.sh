@@ -13,7 +13,6 @@ systemctl stop postfix.service && systemctl disable postfix.service
 ################################################################################################
 i="export TIME_STYLE='+%Y-%m-%d %H:%M:%S'"
 echo ${i} >> /etc/profile
-cat /etc/profile
 
 ################################################################################################
 ## 修改系统参数
