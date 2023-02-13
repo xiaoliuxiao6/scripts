@@ -26,13 +26,8 @@ sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 ################################################################################################
 ## 关闭防火墙
 ################################################################################################
-which systemctl && systemctl stop firewalld
-which systemctl && systemctl disable firewalld
-which systemctl && systemctl stop iptables || service iptables stop
-which systemctl && systemctl disable iptables || chkconfig iptables off
-## 验证
-systemctl status firewalld
-systemctl status iptables
+systemctl stop firewalld.service
+systemctl disable firewalld.service
 
 ################################################################################################
 ## 禁用IPV6
