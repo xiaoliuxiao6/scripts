@@ -2,31 +2,6 @@
 set -o errexit
 set -o nounset
 
-##############################################################################
-## 修改 history 行为
-##############################################################################
-## 删除原有设置
-sed -i '/^HISTSIZE/d' /root/.bashrc
-sed -i '/^HISTFILESIZE/d' /root/.bashrc
-sed -i '/^HISTTIMEFORMAT/d' /root/.bashrc
-sed -i '/^PROMPT_COMMAND/d' /root/.bashrc
-sed -i '/^shopt -s/d' /root/.bashrc
-
-## 追加新设置
-cat <<\EOF >> /root/.bashrc
-## 追加而不是覆盖
-shopt -s histappend
-## 定义命令输出的行数
-HISTSIZE=1000
-## 定义最多保留的条数
-HISTFILESIZE=10000
-## 记录执行命令的时间和用户名
-HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S:`whoami` "
-## 实时追加，不必等用户退出
-PROMPT_COMMAND="history -a"
-## 当终端窗口大小改变时，确保显示得到更新
-shopt -s checkwinsize
-EOF
 
 ################################################################################################
 ## 修改尽量不占用 SWAP
