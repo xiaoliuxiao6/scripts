@@ -12,9 +12,3 @@ rm -rf /etc/ssh/ssh_host_*
 
 ## 删除日志
 rm -rf /var/log/*
-
-## 删除 History
-cat /dev/null > ~/.bash_history
-
-## 运行 sys-unconfig
-sys-unconfig
