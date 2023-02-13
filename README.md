@@ -8,7 +8,7 @@
 curl -sfL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/init_centos7.sh | sh -
 ```
 
-## 封装
+#### 封装
 删除历史记录等，以便将其转换为模板
 ```sh
 curl -sfL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/unconfig_centos7.sh | sh -
