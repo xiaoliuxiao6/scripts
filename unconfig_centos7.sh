@@ -1,8 +1,5 @@
 #!/bin/sh
-
-## 如果发现退出码为1则停止运行
 set -o errexit 
-## 如果发现空的变量则停止运行
 set -o nounset
 
 ## 删除 ssh 主机密钥
