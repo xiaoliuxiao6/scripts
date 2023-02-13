@@ -100,5 +100,3 @@ then
     echo '" 取消自动注释' >> /etc/vimrc
     echo 'set paste' >> /etc/vimrc
 fi
-
-
