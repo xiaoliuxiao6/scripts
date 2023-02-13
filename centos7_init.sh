@@ -81,4 +81,4 @@ echoCyan(){
     echo -e "\033[36m$*\033[0m"
 }
 
-echoCyan "Success"
+echoCyan "Success, 有更新操作，建议重启系统后使用"
