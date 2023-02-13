@@ -9,6 +9,7 @@ curl -sfL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/init_cento
 ```
 
 #### 优化
+生产环境中一些必要设置和美化
 ```sh
 curl -sfL https://github.com/xiaoliuxiao6/scripts/blob/main/centos7_youhua.sh | sh -
 ```
