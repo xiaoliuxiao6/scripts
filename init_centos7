@@ -11,7 +11,6 @@ set -o nounset
 sed -i "/swappiness/d" /etc/sysctl.conf
 echo "vm.swappiness=1" >> /etc/sysctl.conf
 sysctl -p
-cat /proc/sys/vm/swappiness
 
 ################################################################################################
 ## 禁用登录 SSH 时候解析主机名称
@@ -31,7 +30,7 @@ which systemctl && systemctl stop firewalld
 which systemctl && systemctl disable firewalld
 which systemctl && systemctl stop iptables || service iptables stop
 which systemctl && systemctl disable iptables || chkconfig iptables off
-    ## 验证
+## 验证
 systemctl status firewalld
 systemctl status iptables
 
