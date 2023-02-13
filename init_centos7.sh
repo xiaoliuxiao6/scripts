@@ -55,7 +55,6 @@ echo "server ntp.aliyun.com iburst" >>/etc/chrony.conf
 ## 2.重启服务并查看状态是否正常并设置开机自动启动
 systemctl enable chronyd
 systemctl restart chronyd
-systemctl status chronyd
 chronyc tracking
 
 ## 3.将当前的 UTC 时间写入硬件时钟
