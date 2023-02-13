@@ -80,3 +80,4 @@ yum install -y vim \
 yum update -y
 
 echo "执行完毕 `date`"
+init 6
