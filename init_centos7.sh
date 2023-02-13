@@ -79,5 +79,9 @@ yum install -y vim \
 ################################################################################################
 yum update -y
 
-echo "执行完毕, 将自动重启 `date`"
+echoCyan(){
+    echo -e "\033[36m$*\033[0m"
+}
+
+echoCyan "Success, will restart"
 init 6
