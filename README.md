@@ -9,5 +9,5 @@ curl -sfL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/init_cento
 
 ## 封装
 ```sh
-curl -sfL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/unconfig_centos7.sh | sh -
+curl -sfL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/unconfig_centos7.sh | sh - && cat /dev/null > ~/.bash_history && sys-unconfig
 ```
