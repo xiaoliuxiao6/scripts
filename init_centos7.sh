@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ## 如果发现退出码为1则停止运行
 set -o errexit 
