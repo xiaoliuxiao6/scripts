@@ -29,7 +29,7 @@ systemctl disable firewalld.service
 ################################################################################################
 ## 禁用IPV6
 ################################################################################################
-grep -l IPV6 /etc/sysconfig/network-scripts/ifcfg-* || sed -i "/IPV6/d" `grep -l IPV6 /etc/sysconfig/network-scripts/ifcfg-*`
+[[ `grep -l IPV6 /etc/sysconfig/network-scripts/ifcfg-* | wc -l` -gt 0 ]] && sed -i "/IPV6/d" `grep -l IPV6 /etc/sysconfig/network-scripts/ifcfg-*`
 echo 'net.ipv6.conf.all.disable_ipv6=1' >> /etc/sysctl.conf
 echo 'net.ipv6.conf.default.disable_ipv6=1' >> /etc/sysctl.conf
 sysctl -p
