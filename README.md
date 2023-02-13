@@ -8,6 +8,11 @@
 curl -sfL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/init_centos7.sh | sh -
 ```
 
+#### 优化
+```sh
+curl -sfL https://github.com/xiaoliuxiao6/scripts/blob/main/centos7_youhua.sh | sh -
+```
+
 #### 封装
 删除历史记录等，以便将其转换为模板
 ```sh
