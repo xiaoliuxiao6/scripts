@@ -18,6 +18,8 @@ curl -sL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/centos7_you
 删除历史记录等，以便将其转换为模板
 ```sh
 curl -sL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/centos7_unconfig.sh | sh -
+logout
+
 cat /dev/null > ~/.bash_history
 sys-unconfig
 ```
