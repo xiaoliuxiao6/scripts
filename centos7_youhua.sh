@@ -109,4 +109,4 @@ echoCyan(){
 }
 
 echoCyan "Success"
-logout
+exit
