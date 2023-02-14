@@ -19,6 +19,14 @@ curl -sL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/centos7_ini
 
 ## 优化
 生产环境中一些必要设置和美化
+- 关闭无用的 postfix.service
+- 设置 ls 输出时间格式
+- 修改 openfile 限制
+- 修改history最大记录数
+- 设置登录 shell 后主机名变色
+- 安装VIM编辑器并个性化配置
+
+
 ```sh
 curl -sL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/centos7_youhua.sh | sh -
 ```
