@@ -3,7 +3,16 @@
 
 ## CentOS 7
 #### 初始化
-一些基本的通用修改，可以放心使用
+- 修改尽量不占用 SWAP
+- 禁用登录 SSH 时候解析主机名称
+- 关闭 SeLinux
+- 关闭防火墙
+- 禁用IPV6
+- 修改时区为 +0800
+- 配置从阿里云服务器进行时间同步
+- 安装常用软件和中文支持
+- 更新系统
+
 ```sh
 curl -sL https://raw.githubusercontent.com/xiaoliuxiao6/scripts/main/centos7_init.sh | sh -
 ```
